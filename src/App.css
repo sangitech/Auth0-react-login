@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* COMMON CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 29px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* SECTION CSS */
+.section-style {
+  background: #3c2846;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1170px;
+  display: table;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* LOGIN CARD CSS */
+.card {
+  background: #333333;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.admin .card {
+  background-color: transparent;
+  width: 800px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.admin .color-white {
+  color: #111;
+}
+
+.card .content {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.admin .card .content {
+  padding: 0;
+  text-align: center;
+}
+
+.user-image img {
+  border-radius: 50%;
+}
+
+.user-email {
+  text-transform: lowercase
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+/* BUTTON CSS */
+.btn-com {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  min-width: 150px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #ADA298 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: 300ms ease-in-out;
+  border-radius: 5px;
+}
+
+.btn-com:hover {
+  background-position: 0;
+  transition: 300ms ease-in-out;
+  border: 2px solid #ADA298;
+}
+
+.admin .btn-com {
+  background-color: transparent;
+  color: #111;
+  border: 2px solid #111;
+  background-image: linear-gradient(45deg, #111 50%, transparent 50%);
+}
+
+.admin .btn-com:hover {
+  background-color: #111;
+  border: 2px solid #111;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .section-style {
+    height: 100vh;
+  }
+
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .section-style {
+    padding: 100px 20px;
+  }
+
+  .admin .card,
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .btn-com {
+    padding: 10px 10px;
+    margin-top: 30px;
+    border: 2px solid #fff;
+    min-width: 100px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .pt-20 {
+    padding-top: 10px;
+  }
+}
